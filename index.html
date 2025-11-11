@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kevin S. Villanueva — Portfolio</title>
+  <style>
+    :root{--max:980px}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; margin:0; padding:1rem; background:#f7f7f8; color:#111}
+    .wrap{max-width:var(--max); margin:0 auto}
+    header{display:flex; align-items:center; gap:1rem; justify-content:space-between}
+    h1{font-size:1.4rem; margin:0}
+    p.lead{margin:.25rem 0 1rem;color:#444}
+    .viewer{background:#fff;border:1px solid #e6e6e9;padding:12px;border-radius:8px; box-shadow:0 4px 14px rgba(0,0,0,.04)}
+    .actions{margin-bottom:.5rem}
+    .thumbs{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem}
+    a.button{display:inline-block;padding:.45rem .75rem;border-radius:6px;text-decoration:none;border:1px solid #ddd;background:#fafafa;color:#111}
+    iframe{width:100%;height:78vh;border:0}
+    footer{color:#666;text-align:center;margin-top:1rem;font-size:.9rem}
+    @media(max-width:640px){ iframe{height:65vh} header{flex-direction:column;align-items:flex-start} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Kevin S. Villanueva</h1>
+        <p class="lead">Android Application Developer — portfolio highlights.</p>
+      </div>
+      <div>
+        <a class="button" href="KV-Portfolio-2025.pdf" download>Download PDF</a>
+      </div>
+    </header>
+
+    <main class="viewer" role="main">
+      <div class="actions">
+        <a href="#projects">Jump to projects</a>
+        &nbsp;•&nbsp;
+        <a href="KV-Portfolio-2025.pdf" target="_blank" rel="noopener">Open PDF in new tab</a>
+      </div>
+
+      <!-- Embedded PDF -->
+      <iframe src="KV-Portfolio-2025.pdf" title="Portfolio PDF"></iframe>
+
+      <section id="projects" style="margin-top:1rem">
+        <h2 style="font-size:1.05rem;margin:.5rem 0">Projects (quick links)</h2>
+        <div class="thumbs">
+          <!-- Replace/add thumbnails if you create them -->
+          <a href="KV-Portfolio-2025.pdf#page=1" title="Cover / Intro">Cover</a>
+          <a href="KV-Portfolio-2025.pdf#page=2" title="Project A">Project A</a>
+          <a href="KV-Portfolio-2025.pdf#page=3" title="Project B">Project B</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Hosted with GitHub Pages — update this site by committing & pushing changes to this repo.
+    </footer>
+  </div>
+</body>
+</html>
